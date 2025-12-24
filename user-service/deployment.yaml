@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: adm-l/user-service:TAG_TO_BE_UPDATED
+          image: bharat777/user-service:38063d6
           ports:
             - containerPort: 5000
