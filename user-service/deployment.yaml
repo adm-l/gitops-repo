@@ -4,6 +4,12 @@ metadata:
   name: user-service
 spec:
   replicas: 5
+  revisionHistoryLimit: 3       # Keep only last 3 revisions
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
   selector:
     matchLabels:
       app: user-service
@@ -14,6 +20,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: bharat777/user-service:47101d6
+          image: bharat777/user-service:latest   # CI will replace this dynamically
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
