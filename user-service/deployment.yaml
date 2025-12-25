@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: bharat777/user-service:38063d6
+          image: bharat777/user-service:47101d6
           ports:
             - containerPort: 5000
