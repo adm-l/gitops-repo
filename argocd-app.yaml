@@ -8,9 +8,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/adm-l/gitops-repo.git
+    repoURL: https://github.com/adm-l/develop.git
     targetRevision: dev
-    path: dev
+    path: hello-api-chart
 
   destination:
     server: https://kubernetes.default.svc
