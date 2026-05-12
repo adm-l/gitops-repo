@@ -8,7 +8,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR_USERNAME/gitops-repo.git
+    repoURL: https://github.com/adm-l/gitops-repo.git
     targetRevision: dev
     path: dev
 
